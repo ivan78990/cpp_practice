@@ -1,16 +1,17 @@
 #ifndef PHONEBOOK_HPP
-#define PHONEBOOK_HPP
+# define PHONEBOOK_HPP
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include "Contact.hpp"
+#include "Oldphone.hpp"
+#include <stdlib.h>
 
 class Phonebook {
 
 private:
     int index;
     bool max;
-    Contact contacts[8];
+    Oldphone contacts[8];
 
 public:
     Phonebook();

@@ -1,4 +1,5 @@
 #include "Phonebook.hpp"
+#include "Oldphone.hpp"
 
 Phonebook::Phonebook() {
     index = 0;
@@ -92,7 +93,7 @@ void Phonebook::searchContact() {
 
 }
 
-void Phonebook::informationAboutContact(int Index) { 
+void Phonebook::informationAboutContact(int index) { 
     std::cout << "Info about contact " << index + 1 << std::endl;
     std::cout << "First name:     " << contacts[index].getFirstName() << std::endl;
     std::cout << "Last name:      " << contacts[index].getLastName() << std::endl;

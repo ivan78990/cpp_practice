@@ -6,7 +6,7 @@ int main(void) {
     std::string option;
     Phonebook phonebook;
 
-    std::cout << "Please, enter ADD, SEARSH or EXIT" << std::endl;
+    std::cout << "Please, enter ADD, SEARCH or EXIT" << std::endl;
     while (option != "EXIT") {
         std::cout << "Enter ADD, SEARCH or EXIT: ";
         std::getline(std::cin, option);

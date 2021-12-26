@@ -1,9 +1,9 @@
-#ifndef OLDONE_HPP
-#define OLDONE_HPP
+#ifndef OLDPHONE_HPP
+# define OLDPHONE_HPP
 #include <iostream>
 #include <string>
 
-class Contact {
+class Oldphone {
 
 private:
     int index;
@@ -14,22 +14,20 @@ private:
     std::string darkest_secret;
 
 public:
-    Contact();
-    ~Contact();
+    Oldphone();
+    ~Oldphone();
     void setIndex(int index);
     void setFirstName(std::string first_name);
     void setLastName(std::string last_name);
     void setNickName(std::string nickname);
     void setPhoneNumber(std::string phone_number);
     void setDarkestSecret(std::string darkest_secret);
-    int  gerIndex();
+    int  getIndex();
     std::string getFirstName();
     std::string getLastName();
     std::string getNickName();
     std::string getPhoneNumber();
     std::string getDarkestSecret();
-
-    void AddNew(void);
 };
 
 #endif
