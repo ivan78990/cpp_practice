@@ -6,7 +6,8 @@ int main(int argc, char const *argv[])
 {
     if (argc == 1)
         std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
-    else
+    else 
+    {
         for (int i = 1; i < argc; i++)
         {
 
@@ -15,6 +16,8 @@ int main(int argc, char const *argv[])
             for (size_t j = 0; j < s1.length(); j++)
                 std::cout << (char)std::toupper(s1[j]);
         }
-        std::cout << std::endl;
-        return 0;
+        
+    }
+    std::cout << std::endl;
+    return 0;
 }

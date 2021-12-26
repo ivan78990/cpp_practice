@@ -21,7 +21,7 @@ int main(void) {
                 std::cout << "Incorrect option!" << std::endl;
             }
             else
-                std::cout << "Exit phonebook" << std::endl;
+                std::cout << "Exit Phonebook." << std::endl;
 
     }
     return 0;
