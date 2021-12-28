@@ -65,7 +65,7 @@ void Account::makeDeposit(int deposit) {
 }
 
 bool Account::makeWithdrawal(int withdrawal) {
-    _displayTimestamp;
+    _displayTimestamp();
     std::cout << "index:" << _accountIndex << ";p_amount:" << _amount << ";withdrawal:";
     if (_amount < withdrawal) {
         std::cout << "refused" << std::endl;
@@ -83,7 +83,7 @@ bool Account::makeWithdrawal(int withdrawal) {
 
 void Account::_displayTimestamp(void) {
     time_t currentTime = time(0);
-    struct tm *lacalDateTime;
+    struct tm *localDateTime;
     char buf[80];
 
     time(&currentTime);
